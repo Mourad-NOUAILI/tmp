@@ -8,6 +8,8 @@ void fill(std::vector<std::vector<int>>& M,int n){
     }
 }
 
+// row_index is the anti-diagonal at row i=row_index and column j=0
+// Going anti-diagonally up (i--,j++), allow us to display the row at row_index of the pascal triangle 
 std::vector<int> get_row(std::vector<std::vector<int>>& M, int n, int row_index){
     assert(row_index < n);
     std::vector<int> row;
